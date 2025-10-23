@@ -1,0 +1,40 @@
+.limitPageContainer {
+    background-color: #f1f1f1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+}
+
+.limitPage {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 36em;
+    min-height: 100vh;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.chatEmptyStateTitle {
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1.875rem;
+}
+
+.chatEmptyStateSubtitle {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.limitPage img {
+    align-self: flex-start;
+    height: auto;
+    width: 20em;
+}

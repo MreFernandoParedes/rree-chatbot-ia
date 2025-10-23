@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: white;
+    font-size: 12px; /* Root font size for 320px width screens */
+    font-family:
+        "Calibri",
+        "Segoe UI",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100%;
+}
+
+.spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.spinner {
+    border: 0.5em solid rgba(0, 0, 0, 0.1);
+    border-left-color: #808080;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 480px) {
+    html {
+        font-size: 13px; /* Slightly larger font size for larger phones */
+    }
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 14px; /* Adjust for small tablets and large phones in landscape */
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 15px; /* Suitable for medium tablets */
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 16px; /* Standard size for desktops */
+    }
+}
